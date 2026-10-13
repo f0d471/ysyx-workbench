@@ -1,0 +1,47 @@
+{
+  "registeredUtc": "2026-10-13T13:08:25.3131430Z",
+  "sources": [
+    {
+      "name": "workbench",
+      "url": "https://github.com/OSCPU/ysyx-workbench.git",
+      "ref": "master",
+      "commit": "c35eee804dc7cc1abe147e9166d35c8dc5ec4cfd"
+    },
+    {
+      "name": "nemu",
+      "url": "https://github.com/NJU-ProjectN/nemu.git",
+      "ref": "ics2024",
+      "commit": "8e7a0fecc95b5b5d2c1f6be0ec1b703da93356c0"
+    },
+    {
+      "name": "abstract-machine",
+      "url": "https://github.com/NJU-ProjectN/abstract-machine.git",
+      "ref": "ics2026",
+      "commit": "9bc0a93c52c928a6de970f39a507be94cfb63a9f"
+    },
+    {
+      "name": "fceux-am",
+      "url": "https://github.com/NJU-ProjectN/fceux-am.git",
+      "ref": "ics2021",
+      "commit": "d5524ba624300869d6c793f01e6632e4dc3066ef"
+    },
+    {
+      "name": "nvboard",
+      "url": "https://github.com/NJU-ProjectN/nvboard.git",
+      "ref": "master",
+      "commit": "b5f49b68a85f4a1a185086cbd6532fff3ecda454"
+    },
+    {
+      "name": "capstone",
+      "url": "https://github.com/capstone-engine/capstone.git",
+      "ref": "5.0.6",
+      "commit": "accf4df62f1fba6f92cae692985d27063552601c"
+    },
+    {
+      "name": "verilator",
+      "url": "https://github.com/verilator/verilator.git",
+      "ref": "stable",
+      "commit": "983a06a16f2aea1cf4bda3a45099c8bad24d112c"
+    }
+  ]
+}

@@ -10,3 +10,11 @@
 !README.md
 !.gitignore
 !init.sh
+/fceux-am
+/nvboard
+!.gitattributes
+!/docs/*.md
+!/docs/sources.json
+!/tools/*.sh
+!/tools/*.py
+!/tools/README.md
