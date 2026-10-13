@@ -13,6 +13,8 @@
 /fceux-am
 /nvboard
 !.gitattributes
+!.editorconfig
+!/.vscode/settings.json
 !/docs/*.md
 !/docs/sources.json
 !/tools/*.sh
