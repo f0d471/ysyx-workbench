@@ -62,7 +62,7 @@ def main():
     parser.add_argument("--component", choices=("all", "nemu", "verilator"), default="all")
     args = parser.parse_args()
     if Path(os.environ.get("NEMU_HOME", "")).resolve() != ROOT / "nemu":
-        raise RuntimeError("Use the YSYX WSL sandbox entrypoint with Main as workbench")
+        raise RuntimeError("Use the YSYX WSL sandbox entrypoint with ysyx-workbench as workbench")
     if os.getuid() == 0:
         raise RuntimeError("Do not build projects as root")
     if args.component in ("all", "nemu"):

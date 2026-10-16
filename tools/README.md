@@ -5,10 +5,10 @@
 用于安装后自动检查 NEMU 内置镜像和 Verilator C++ 示例。日常交互实验使用 [日常实验](../docs/日常实验.md) 中的 Shell 入口。必须通过 YSYX 的 WSL 隔离入口调用。
 
 ```powershell
-& ..\..\Tools\wsl-sandbox\sandbox.ps1 -Action Run -Command @('python3', '-B', 'tools/first-run.py')
+& ..\..\..\..\Tools\wsl-sandbox\sandbox.ps1 -Action Run -Project ysyx -Command @('python3', '-B', 'tools/first-run.py')
 ```
 
-以上命令在 YSYX/Main 目录执行；从 Workspace 根执行时，入口为 .\Tools\wsl-sandbox\sandbox.ps1。
+以上命令在 StudyLab/projects/ysyx/ysyx-workbench 目录执行；从 Workspace 根执行时，入口为 .\Tools\wsl-sandbox\sandbox.ps1。
 
 - 默认检查两个组件；--component nemu 或 --component verilator 可只检查一个。
 - 没有 NEMU 配置时，使用官方 Kconfig 默认值生成配置；已有配置不会重置。
@@ -24,7 +24,7 @@
 从 Workspace 根目录运行：
 
 ```powershell
-& .\Tools\wsl-sandbox\sandbox.ps1 -Action Run -Gui -Command @('python3', '-B', 'tools/nvboard-startup.py')
+& .\Tools\wsl-sandbox\sandbox.ps1 -Action Run -Project ysyx -Gui -Command @('python3', '-B', 'tools/nvboard-startup.py')
 ```
 
 普通运行不加 -Gui 时使用 SDL dummy 驱动；这个图形检查显式启用 WSLg X11 和软件渲染。
