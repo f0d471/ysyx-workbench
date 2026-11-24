@@ -8,7 +8,7 @@
 & ..\..\..\..\Tools\wsl-sandbox\sandbox.ps1 -Action Run -Project ysyx -Command @('python3', '-B', 'tools/first-run.py')
 ```
 
-以上命令在 StudyLab/projects/ysyx/Main 目录执行；从 Workspace 根执行时，入口为 .\Tools\wsl-sandbox\sandbox.ps1。
+以上命令在 StudyLab/projects/ysyx/ysyx-workbench 目录执行；从 Workspace 根执行时，入口为 .\Tools\wsl-sandbox\sandbox.ps1。
 
 - 默认检查两个组件；--component nemu 或 --component verilator 可只检查一个。
 - 没有 NEMU 配置时，使用官方 Kconfig 默认值生成配置；已有配置不会重置。
