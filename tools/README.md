@@ -2,7 +2,7 @@
 
 ## first-run.py
 
-用于安装后自动检查 NEMU 内置镜像和 Verilator C++ 示例。日常交互实验使用 [日常实验](../docs/日常实验.md) 中的 Shell 入口。必须通过 YSYX 的 WSL 隔离入口调用。
+用于安装后自动检查 NEMU 内置镜像和 Verilator C++ 示例。日常交互实验的 Shell 入口见 [开发环境](../docs/开发环境.md) 的「日常使用」一节。必须通过 YSYX 的 WSL 隔离入口调用。
 
 ```powershell
 & ..\..\..\..\Tools\wsl-sandbox\sandbox.ps1 -Action Run -Project ysyx -Command @('python3', '-B', 'tools/first-run.py')
